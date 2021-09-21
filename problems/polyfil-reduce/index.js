@@ -10,3 +10,9 @@ Array.prototype.custReducer = function (callBack, initialValue) {
   }
   return acc;
 };
+
+const array1 = [1, 2, 3, 4];
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.custReducer(reducer));

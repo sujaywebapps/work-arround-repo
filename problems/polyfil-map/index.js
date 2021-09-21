@@ -9,5 +9,6 @@ Array.prototype.custMap = function (callBack) {
 };
 
 const a = [1, 2, 3, 4, 5].map((ele, i) => {
-  return ele;
+  return ele * 2;
 });
+console.log(a);

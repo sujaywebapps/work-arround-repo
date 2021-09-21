@@ -2,7 +2,7 @@
 Array.prototype.custFilter = function (func, context) {
   let filteredArr = [];
   for (let i = 0; i < this.length; i++) {
-    if (func.call(this[i], i, this)) {
+    if (func.call(this, this[i], i, this)) {
       filteredArr.push(this[i]);
     }
     return filteredArr;
